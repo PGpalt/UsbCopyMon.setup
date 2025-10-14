@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UsbCopyMon.setup", "UsbCopyMon.setup\UsbCopyMon.setup.vdproj", "{BF43F780-2ED1-F062-6D0B-C5023096B8D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsbCopyMon.SetupActions", "UsbCopyMon.SetupActions\UsbCopyMon.SetupActions.csproj", "{40A71922-F1E1-42B6-AF8D-D7582FAD7B00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF43F780-2ED1-F062-6D0B-C5023096B8D6}.Debug|Any CPU.ActiveCfg = Debug
+		{BF43F780-2ED1-F062-6D0B-C5023096B8D6}.Debug|Any CPU.Build.0 = Debug
+		{BF43F780-2ED1-F062-6D0B-C5023096B8D6}.Release|Any CPU.ActiveCfg = Release
+		{BF43F780-2ED1-F062-6D0B-C5023096B8D6}.Release|Any CPU.Build.0 = Release
+		{40A71922-F1E1-42B6-AF8D-D7582FAD7B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A71922-F1E1-42B6-AF8D-D7582FAD7B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A71922-F1E1-42B6-AF8D-D7582FAD7B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A71922-F1E1-42B6-AF8D-D7582FAD7B00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0C0DB91-1F76-444D-BE9D-E9580C48888E}
+	EndGlobalSection
+EndGlobal
