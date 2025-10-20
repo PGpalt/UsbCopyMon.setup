@@ -2,7 +2,6 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Configuration.Install;
 
 namespace UsbCopyMon.SetupActions
 {
