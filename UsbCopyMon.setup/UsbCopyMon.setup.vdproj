@@ -45,18 +45,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_41A80634E82E4E8A9866261110E57729"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_420FB4A31C25484798E73898C230D1E6"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_610B608137B97FB19DC43296449A6C5A"
         "OwnerKey" = "8:_F7EAB359F6374E36BC6ED0A6AD347F06"
         "MsmSig" = "8:_UNDEFINED"
@@ -81,6 +69,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_E0B2BAA1EBB644248AA872FC1D86BF45"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E7DAE809C9307E996B2DBCB013FE6CE0"
         "OwnerKey" = "8:_F7EAB359F6374E36BC6ED0A6AD347F06"
         "MsmSig" = "8:_UNDEFINED"
@@ -93,14 +87,20 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E7DAE809C9307E996B2DBCB013FE6CE0"
+        "MsmKey" = "8:_FC96CF5C9A224D71B8722BEA33C64DE3"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_F7EAB359F6374E36BC6ED0A6AD347F06"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_E7DAE809C9307E996B2DBCB013FE6CE0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -755,7 +755,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:UsbCopyMon"
         "ProductCode" = "8:{F8CF8CCE-B75A-48E5-BD6A-A250C3B72201}"
-        "PackageCode" = "8:{DE89BF93-D8CC-494B-821B-19EEA08DD7FB}"
+        "PackageCode" = "8:{98C939BC-B274-40BB-AE9E-3AC960F6169C}"
         "UpgradeCode" = "8:{FD74E820-C68B-4B9E-A402-60AE6878E4F2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1274,9 +1274,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_41A80634E82E4E8A9866261110E57729"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_E0B2BAA1EBB644248AA872FC1D86BF45"
             {
-            "SourcePath" = "8:..\\..\\UsbCopyMonitor\\UsbCopyMon.Service\\obj\\Debug\\net8.0-windows\\win-x64\\apphost.exe"
+            "SourcePath" = "8:..\\..\\UsbCopyMonitor\\UsbCopyMon.Service\\obj\\Release\\net8.0-windows\\win-x64\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_8EDDC0C8B4A14EB6AF609DF3295EF03F"
@@ -1298,34 +1298,7 @@
             "OutputGroupCanonicalName" = "8:PublishItems"
             "OutputProjectGuid" = "8:{CBC6A41C-EDFC-4F8B-928B-C245DFC63B81}"
             "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_420FB4A31C25484798E73898C230D1E6"
-            {
-            "SourcePath" = "8:..\\..\\UsbCopyMonitor\\UsbCopyMon.Tray\\obj\\Debug\\net8.0-windows\\apphost.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_8880761960254C35B0850D191EEADF85"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:PublishItems"
-            "OutputProjectGuid" = "8:{78E50E4B-304D-47A2-B9B3-1B7AA3A70B42}"
-            "ShowKeyOutput" = "11:TRUE"
+            "PublishProfilePath" = "8:Properties\\PublishProfiles\\FolderProfile.pubxml"
                 "ExcludeFilters"
                 {
                 }
@@ -1354,6 +1327,35 @@
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{40A71922-F1E1-42B6-AF8D-D7582FAD7B00}"
             "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FC96CF5C9A224D71B8722BEA33C64DE3"
+            {
+            "SourcePath" = "8:..\\..\\UsbCopyMonitor\\UsbCopyMon.Tray\\obj\\Debug\\net8.0-windows\\apphost.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_8880761960254C35B0850D191EEADF85"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:PublishItems"
+            "OutputProjectGuid" = "8:{78E50E4B-304D-47A2-B9B3-1B7AA3A70B42}"
+            "ShowKeyOutput" = "11:TRUE"
+            "PublishProfilePath" = "8:Properties\\PublishProfiles\\FolderProfile.pubxml"
                 "ExcludeFilters"
                 {
                 }
