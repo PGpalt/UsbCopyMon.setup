@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0E7BFBCCAC9D493E9DBACBC289A70ED9"
+        "MsmKey" = "8:_18CF5526804D467283E4F06BF8296E16"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -199,21 +199,6 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_1161EF995BDF4825BC6A1D8116E50FEA"
-            {
-            "Name" = "8:powershell.exe"
-            "Condition" = "8:"
-            "Object" = "8:_0E7BFBCCAC9D493E9DBACBC289A70ED9"
-            "FileType" = "3:2"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:-NoProfile -ExecutionPolicy Bypass -Command \"$n='UsbCopyMon Tray';$exe=$env:ProgramFiles+'\\UsbCopyMon\\UsbCopyMon.Tray.exe';$s=New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit '00:00:00';if(Get-ScheduledTask -TaskName $n -ErrorAction SilentlyContinue){Set-ScheduledTask -TaskName $n -Settings $s}else{Register-ScheduledTask -TaskName $n -Action (New-ScheduledTaskAction -Execute $exe -Argument '--autorun') -Trigger (New-ScheduledTaskTrigger -AtLogOn -Delay '00:00:03') -Principal (New-ScheduledTaskPrincipal -GroupId 'S-1-5-4' -RunLevel LeastPrivilege) -Settings $s|Out-Null};Start-ScheduledTask -TaskName $n\""
-            "EntryPoint" = "8:"
-            "Sequence" = "3:2"
-            "Identifier" = "8:_46FB3B8D_9A1B_43B6_A7DF_99EF6781AE22"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            "Run64Bit" = "11:TRUE"
-            }
             "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_4CB485E4BA4744C2B754C775929515AA"
             {
             "Name" = "8:cmd.exe"
@@ -318,6 +303,21 @@
             "CustomActionData" = "8:"
             "Run64Bit" = "11:TRUE"
             }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_CB742EDABB9345328FD42BEF7779C96C"
+            {
+            "Name" = "8:cmd.exe"
+            "Condition" = "8:NOT Installed AND UILevel >= 3"
+            "Object" = "8:_3AF2EF66E567428F8395A9A309D4B394"
+            "FileType" = "3:2"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:/c start \"\" \"[TARGETDIR]Tray\\\\UsbCopyMon.Tray.exe\" --autorun"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:2"
+            "Identifier" = "8:_904BB5EA_14C6_4ADD_98C7_9D5E98EAC2E5"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            "Run64Bit" = "11:TRUE"
+            }
             "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_D993E9B948174FBA98D8584884EA0C17"
             {
             "Name" = "8:cmd.exe"
@@ -366,12 +366,12 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0E7BFBCCAC9D493E9DBACBC289A70ED9"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_18CF5526804D467283E4F06BF8296E16"
             {
-            "SourcePath" = "8:C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-            "TargetName" = "8:powershell.exe"
+            "SourcePath" = "8:..\\..\\UsbCopyMonitor\\UsbCopyMon.Tray\\bin\\Release\\net8.0-windows\\publish\\tray-publish\\UsbCopyMon.Tray.exe"
+            "TargetName" = "8:UsbCopyMon.Tray.exe"
             "Tag" = "8:"
-            "Folder" = "8:_5DAD0A434311486183C0A2447AD717F3"
+            "Folder" = "8:_8880761960254C35B0850D191EEADF85"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -755,7 +755,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:UsbCopyMon"
         "ProductCode" = "8:{F8CF8CCE-B75A-48E5-BD6A-A250C3B72201}"
-        "PackageCode" = "8:{98C939BC-B274-40BB-AE9E-3AC960F6169C}"
+        "PackageCode" = "8:{DA2F9631-45D1-4A69-9F12-BD958FC3A06B}"
         "UpgradeCode" = "8:{FD74E820-C68B-4B9E-A402-60AE6878E4F2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -875,6 +875,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_FEA24EBFAC3D415A9EE594135208ABCD"
+            {
+            "Name" = "8:Shortcut to %sUsbCopyMon.Tray.exe"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_18CF5526804D467283E4F06BF8296E16"
+            "Folder" = "8:_D9F44CE966A5428386035FFDAA1490A2"
+            "WorkingFolder" = "8:_8880761960254C35B0850D191EEADF85"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -1276,7 +1290,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_E0B2BAA1EBB644248AA872FC1D86BF45"
             {
-            "SourcePath" = "8:..\\..\\UsbCopyMonitor\\UsbCopyMon.Service\\obj\\Release\\net8.0-windows\\win-x64\\apphost.exe"
+            "SourcePath" = "8:..\\..\\UsbCopyMonitor\\UsbCopyMon.Service\\obj\\Debug\\net8.0-windows\\win-x64\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_8EDDC0C8B4A14EB6AF609DF3295EF03F"
@@ -1333,7 +1347,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FC96CF5C9A224D71B8722BEA33C64DE3"
             {
-            "SourcePath" = "8:..\\..\\UsbCopyMonitor\\UsbCopyMon.Tray\\obj\\Debug\\net8.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\..\\UsbCopyMonitor\\UsbCopyMon.Tray\\obj\\Debug\\net8.0-windows\\win-x64\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_8880761960254C35B0850D191EEADF85"
