@@ -652,6 +652,18 @@
                 {
                 }
             }
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_8CEF4F7D7E7B4D51B6249507AFEC8A09"
+            {
+            "DefaultLocation" = "8:[StartupFolder]"
+            "Name" = "8:Startup"
+            "AlwaysCreate" = "11:TRUE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:NEWPROPERTY1"
+                "Folders"
+                {
+                }
+            }
             "{1525181F-901A-416C-8A58-119130FE478E}:_AC462DB56A5B47C7918C5E39AD86D869"
             {
             "Name" = "8:#1912"
@@ -854,7 +866,7 @@
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_18CF5526804D467283E4F06BF8296E16"
-            "Folder" = "8:_D9F44CE966A5428386035FFDAA1490A2"
+            "Folder" = "8:_8CEF4F7D7E7B4D51B6249507AFEC8A09"
             "WorkingFolder" = "8:_8880761960254C35B0850D191EEADF85"
             "Icon" = "8:"
             "Feature" = "8:"
